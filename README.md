@@ -30,3 +30,11 @@ To set up the CI/CD pipeline using GitHub Actions, follow these steps:
 2. Add the `deploy.yml` file to the `.github/workflows` directory. This file contains the configuration for the deployment pipeline.
 
 3. The pipeline will automatically run on every push to the `main` branch. It will install dependencies, run tests, and deploy the application.
+
+### Automatic Deployment
+
+The application is now deployed automatically on every push to the `main` branch. This ensures that the latest changes are always live.
+
+### GitHub Actions Workflow
+
+The GitHub Actions workflow file is located at `.github/workflows/deploy.yml`. This file contains the configuration for the deployment pipeline, including steps to install dependencies, run tests, and deploy the application.
