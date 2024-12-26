@@ -1,1 +1,4 @@
 Backend dependencies.
+
+# Deployment dependencies
+pytest
