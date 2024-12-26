@@ -21,6 +21,22 @@ To deploy the application, you can use the provided deployment script. Follow th
    nohup python dashboard.py &
    ```
 
+### Building and Tagging the Docker Image
+
+To build and tag the Docker image for the backend, follow these steps:
+
+1. Ensure you have Docker installed on your machine.
+
+2. Build the Docker image:
+   ```bash
+   docker build -t gcr.io/ddgpt/xxiii-backend .
+   ```
+
+3. Tag the Docker image:
+   ```bash
+   docker tag <image_id> gcr.io/ddgpt/xxiii-backend
+   ```
+
 ### Configuring the CI/CD Pipeline
 
 To set up the CI/CD pipeline using GitHub Actions, follow these steps:
@@ -37,4 +53,4 @@ The application is now deployed automatically on every push to the `main` branch
 
 ### GitHub Actions Workflow
 
-The GitHub Actions workflow file is located at `.github/workflows/deploy.yml`. This file contains the configuration for the deployment pipeline, including steps to install dependencies, run tests, and deploy the application.
+The GitHub Actions workflow file is located at `.github/workflows/deploy.yml`. This file contains the configuration for the deployment pipeline, including steps to install dependencies, run tests, build and tag the Docker image, and deploy the application.

@@ -27,6 +27,14 @@ jobs:
       run: |
         pytest
 
+    - name: Build Docker image
+      run: |
+        docker build -t gcr.io/ddgpt/xxiii-backend .
+
+    - name: Tag Docker image
+      run: |
+        docker tag $(docker images -q gcr.io/ddgpt/xxiii-backend) gcr.io/ddgpt/xxiii-backend
+
     - name: Deploy application
       run: |
         bash deploy/deploy.sh
