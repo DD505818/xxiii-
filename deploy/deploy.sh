@@ -9,3 +9,11 @@ pytest
 # Deploy the application
 echo "Deploying the application..."
 # Add your deployment commands here
+
+# Build the application
+echo "Building the application..."
+# Add your build commands here
+
+# Start the application
+echo "Starting the application..."
+# Add your start commands here
