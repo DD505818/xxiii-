@@ -1,1 +1,7 @@
 Backend dependencies.
+
+# Deployment dependencies
+pytest
+# CI/CD pipeline dependencies
+actions/checkout@v2
+actions/setup-python@v2
