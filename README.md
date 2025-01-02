@@ -16,6 +16,11 @@ To deploy the application, you can use the provided deployment script. Follow th
    bash deploy/deploy.sh
    ```
 
+3. The deployment script will also start the Flask application:
+   ```bash
+   nohup python dashboard.py &
+   ```
+
 ### Configuring the CI/CD Pipeline
 
 To set up the CI/CD pipeline using GitHub Actions, follow these steps:
